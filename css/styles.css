@@ -360,4 +360,7 @@ img{
     padding: 1rem 3rem;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
-    
+.quitarblanco{
+    color: black;
+    background-color: #212121;
+}    

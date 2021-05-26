@@ -447,3 +447,18 @@ img{
         -webkit-transition: -webkit-transform 1s;
                 transition: transform 1s;
       }
+.diagrama{
+    height: 70%;
+    width: 70%;
+}
+
+.diagrama-text{
+    font-size: 3.5rem;
+    margin: 3rem 0;
+    font-weight: 300;
+    font-family: 'Courier New', Courier, monospace;
+}
+.boton-diagrama:hover{
+    background-color: var(--primario);
+    color:var(--negro);
+}

@@ -46,13 +46,13 @@
             
             <a class ="boton" href="#contacto" action="inicio sesion">Contactar</a>
             <div class="logIn zoomlog">
-                <form name="miFormulario" onSubmit="return guardaUsr()">
+                <form method="GET" id="ingresar" name="miFormulario" action="logged.html" onSubmit="return intentar()">
                     <div class="campo__logIn">
                         <div class="campo__logIn--label">
-                            <label>Contraseña</label>
+                            <label for="apellido">Contraseña</label>
                         </div>
                         <div class="campo__logIn--input">
-                            <input class = "input-text transparent" type="password" name="contraseña" placeholder="Contraseña">
+                            <input class = "input-text transparent" type="password" id="clv" name="formClave" placeholder="Contraseña" required >
                         </div>
                         
                     </div>
@@ -61,11 +61,11 @@
                             <label for="usuario">Usuario</label>
                         </div>
                         <div class="campo__logIn--input">
-                            <input class = "input-text transparent" type="text" id="usuario" placeholder="Usuario" required>
+                            <input class = "input-text transparent" type="text" id="usr" name="formUsuario" placeholder="Usuario" required>
                         </div>
                     </div>
                     <div class="enviar">
-                        <input onclick="log()" class="boton" type="submit" value="Enviar">    
+                        <input class="boton" type="submit" value="Enviar">    
                     </div>
                 </form>
             </div>
@@ -182,13 +182,6 @@
     <footer class="footer">
         <p>Todos los derechos reservados, Javier Pineda Lorente Freelancer.</p>
     </footer>
-    <script>
-         function guardaUsr() {
-		  // guardo la variable nomUsr con el usuario ingresado en el formulario
-		  sessionStorage.setItem("nomUsr", document.forms["miFormulario"]["usuario"].value);
-		  // carga la pagina de logout...
-		  window.open("logged.html");
-         }
-    </script>
+    <script src="scripts.js"></script>
 </body>
 </html>
